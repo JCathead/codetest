@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ARIA aria-selected="true" test</title>
+</head>
+
+<body>
+
+<h2> ARIA Selected widget: List items with aria-selected and role=option</h1>
+<ul tabindex="0">
+<li><a href="link1.html" role="option">Mon Sept 22nd, 235.99 Euro</a></li>
+
+<li><a href="link2.html" role="option" aria-selected="true">Mon Sept 23nd, 61.99 Euro</a></li>
+
+<li><a href="link3.html" role="option">Mon Sept 24nd, 76.99 Euro</a></li>
+
+<li><a href="link4.html" role="option">Mon Sept 25nd, 90.99 Euro</a></li>
+</ul>
+
+<h2> ARIA Selected widget: Optgroup element with aria-selected and role=option</h1>
+
+<select>
+<optgroup label="Ryanair Flights">
+<option value="1" aria-selected="true">Mon Sept 22nd, 235.99 Euro </option>
+<option value="2">Mon Sept 23nd, 24.99 Euro"</option>
+<option value="3">Mon Sept 24nd, 25.99 Euro"</option>
+<option value="4">Mon Sept 25nd, 27.99 Euro"</option>
+</optgroup>
+</select>
+
+<h2> ARIA Selected widget: List items with role=button aria-pressed[Works, IE11/JAWS14]</h1>
+<ul tabindex="0">
+<li><a href="link1.html" role="button">Mon Sept 22nd, 235.99 Euro</a></li>
+
+<li><a href="link2.html" role="button" aria-pressed="true">Mon Sept 23nd, 61.99 Euro</a></li>
+
+<li><a href="link3.html" role="button">Mon Sept 24nd, 76.99 Euro</a></li>
+
+<li><a href="link4.html" role="button">Mon Sept 25nd, 90.99 Euro</a></li>
+</ul>
+
+<h2> ARIA Selected widget: List items with aria-pressed[Doesn't work]</h1>
+<ul tabindex="0">
+<li><a href="link1.html">Mon Sept 22nd, 235.99 Euro</a></li>
+
+<li><a href="link2.html" aria-pressed="true">Mon Sept 23nd, 61.99 Euro</a></li>
+
+<li><a href="link3.html">Mon Sept 24nd, 76.99 Euro</a></li>
+
+<li><a href="link4.html">Mon Sept 25nd, 90.99 Euro</a></li>
+</ul>
+
+
+
+</body>
+</html>
